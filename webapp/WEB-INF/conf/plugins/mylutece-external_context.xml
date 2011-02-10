@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <!--  expose MyLutece Authentication service (can be modified to use RMI or HTTPInvoker -->
+    <bean id="myLuteceAuthenticationService" class="fr.paris.lutece.plugins.mylutece.service.MyLuteceAuthenticationServiceImpl" />
+</beans>

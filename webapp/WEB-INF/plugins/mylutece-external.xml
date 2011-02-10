@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plug-in>
+    <name>mylutece-external</name>
+    <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
+    <version>1.0.0</version>
+    <description>module.mylutece.external.plugin.description</description>
+    <documentation></documentation>
+    <installation></installation>
+    <changes></changes>
+    <user-guide></user-guide>
+    <provider>module.mylutece.external.plugin.provider</provider>
+    <provider-url>http://lutece.paris.fr</provider-url>
+    <icon-url>images/admin/skin/plugins/mylutece/mylutece.png</icon-url>
+    <copyright>Copyright 2001-2010 Mairie de Paris</copyright>
+    <core-version-dependency>
+		<min-core-version>2.3.5</min-core-version>
+		<max-core-version></max-core-version>
+    </core-version-dependency>
+    <db-pool-required>0</db-pool-required>
+
+
+
+    <!-- Administration interface parameters -->
+   <admin-features>
+     <admin-feature>
+       <feature-id>MYLUTECE_MANAGE_EXTERNAL_APPLICATION</feature-id>
+       <feature-title>module.mylutece.external.adminFeature.mylutece_management_external_application.name</feature-title>
+       <feature-description>mylutece.adminFeature.mylutece_management_external_application.description</feature-description>
+       <feature-level>3</feature-level>
+       <feature-url>jsp/admin/plugins/mylutece/modules/external/ManageExternalApplicationUser.jsp</feature-url>
+     </admin-feature>
+   </admin-features>
+
+ </plug-in>
