@@ -17,7 +17,7 @@
 		<repository>
 			<id>lutece</id>
 			<name>luteceRepository</name>
-			<url>http://dev.lutece.paris.fr/maven_repository</url>
+			<url>http://dev.lutece.paris.fr/maven_repository/module-mylutece-external</url>
 			<layout>default</layout>
 		</repository>
 	</repositories>
@@ -41,8 +41,8 @@
 		<jiraProjectName>EXTERNAL</jiraProjectName>
 	</properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/authentication</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/authentication</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/portal/trunk/plugins/authentication</url>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/authentication/module-mylutece-external</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/authentication/module-mylutece-external</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/portal/trunk/plugins/authentication/module-mylutece-external</url>
     </scm>
 </project>
