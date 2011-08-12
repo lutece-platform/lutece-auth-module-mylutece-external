@@ -39,6 +39,7 @@
 	<properties>
 		<componentName>mylutece-external</componentName>
 		<jiraProjectName>EXTERNAL</jiraProjectName>
+		<jiraComponentId>10270</jiraComponentId>
 	</properties>
     <scm>
         <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/authentication/module-mylutece-external</connection>
