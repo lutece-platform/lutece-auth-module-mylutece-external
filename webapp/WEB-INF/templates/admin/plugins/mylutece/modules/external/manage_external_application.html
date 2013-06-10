@@ -1,29 +1,32 @@
-<div class="content-box" >
-    <h2>#i18n{mylutece.manage_external_application.tableTitle}</h2>
-    
-    <form action="jsp/admin/plugins/mylutece/ManageExternalApplicationUser.jsp">
-        <table>
-            <tr>
-                <th>#i18n{mylutece.manage_external_application.colName}</th>
-                <th>#i18n{mylutece.manage_external_application.colUrl}</th>
-                <th>#i18n{mylutece.manage_external_application.colActions}</th>
-            </tr>
-            <#list external_application_list as external_application >
-            <tr>
-                <td>${external_application.name}</td>
-                <td>${external_application.adminUrl}</td>
-                <td>
-                	<#if mylutece_user_id?exists>
-	                <a href="jsp/admin/plugins/mylutece/CreateUserExternalApplication.jsp?external_application_name=${external_application.name}&mylutece_user_id=${mylutece_user_id}">
-		                <img src="images/admin/skin/plugins/mylutece/actions/create_user.png" class="icon" alt="#i18n{mylutece.manage_external_application.createUser}" title="#i18n{mylutece.manage_external_application.createUser}" />
-		            </a>
-		            <a href="jsp/admin/plugins/mylutece/AdminUserExternalApplication.jsp?external_application_name=${external_application.name}&mylutece_user_id=${mylutece_user_id}" target="_blank">
-		                <img src="images/admin/skin/plugins/mylutece/actions/admin_user.png" class="icon" alt="#i18n{mylutece.manage_external_application.AdminUser}" title="#i18n{mylutece.manage_external_application.AdminUser}" />
-		            </a>
-		            </#if>
-                </td>
-            </tr>
-            </#list>
-        </table>
-    </form>
+<div class="row-fluid">
+	<div class="span12">
+		<fieldset>
+			<legend>#i18n{mylutece.manage_external_application.tableTitle}</legend>
+    		<form action="jsp/admin/plugins/mylutece/ManageExternalApplicationUser.jsp" >
+			<table class="table table-striped table-condensed">
+				<tr>
+					<th>#i18n{mylutece.manage_external_application.colName}</th>
+					<th>#i18n{mylutece.manage_external_application.colUrl}</th>
+					<th>#i18n{mylutece.manage_external_application.colActions}</th>
+				</tr>
+				<#list external_application_list as external_application >
+				<tr>
+					<td>${external_application.name}</td>
+					<td>${external_application.adminUrl}</td>
+					<td>
+						<#if mylutece_user_id?exists>
+						<a href="jsp/admin/plugins/mylutece/CreateUserExternalApplication.jsp?external_application_name=${external_application.name}&mylutece_user_id=${mylutece_user_id}" class="btn btn-small btn-primary">
+							<i class="icon-plus icon-white" title="#i18n{mylutece.manage_external_application.createUser}"></i>
+						</a>
+						<a href="jsp/admin/plugins/mylutece/AdminUserExternalApplication.jsp?external_application_name=${external_application.name}&mylutece_user_id=${mylutece_user_id}" target="_blank" class="btn btn-small btn-primary">
+							<i class="icon-user icon-white" title="#i18n{mylutece.manage_external_application.AdminUser}"></i>
+						</a>
+						</#if>
+					</td>
+				</tr>
+				</#list>
+			</table>
+			</form>
+		</fieldset>
+	</div>
 </div>
